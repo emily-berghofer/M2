@@ -430,7 +430,7 @@ doc ///
    (sortIdealList, List)
   
   Headline 
-   Sorting a list of ideals according to the number of generators
+   Sorts a list of ideals according to the number of generators
   Usage
    sortIdealList L
   Inputs
@@ -598,7 +598,7 @@ S1=R1/I1
 List1= {x_1,y_1,t_1,t_2,t_3}
 KF1={ideal(0_S1),ideal(x_1),ideal(y_1),ideal(x_1,t_2),ideal(y_1,t_1),ideal(y_1,t_1,t_3),ideal(x_1,t_2,t_1),ideal(y_1,t_1,t_2,t_3), ideal(x_1,y_1,t_1,t_2,t_3)}
 
-Koszulfiltration:=findKoszulFiltration(S1,List1);
+Koszulfiltration =findKoszulFiltration(S1,List1);
 
 assert (all(KF1, I -> any(Koszulfiltration, J -> I == J)))
 ///
